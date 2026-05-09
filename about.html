@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>The Articulated Craft | About the Craft</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fff8f1",
+                    "inverse-primary": "#eabda5",
+                    "outline-variant": "#d4c3bb",
+                    "tertiary-fixed-dim": "#fdba51",
+                    "inverse-on-surface": "#fcefd9",
+                    "primary-fixed-dim": "#eabda5",
+                    "surface": "#fff8f1",
+                    "tertiary-fixed": "#ffddb1",
+                    "tertiary": "#2e1c00",
+                    "on-tertiary-fixed": "#291800",
+                    "on-secondary-fixed": "#390b00",
+                    "on-background": "#201b0e",
+                    "on-primary-fixed": "#2d1607",
+                    "surface-container-highest": "#ede1cb",
+                    "surface-container": "#f9edd6",
+                    "secondary-container": "#fd916d",
+                    "on-surface": "#201b0e",
+                    "on-surface-variant": "#50443e",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#7c2e12",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "on-primary-container": "#bd957e",
+                    "surface-variant": "#ede1cb",
+                    "inverse-surface": "#363021",
+                    "surface-tint": "#795743",
+                    "outline": "#82746d",
+                    "surface-dim": "#e4d9c3",
+                    "secondary": "#9b4427",
+                    "primary-container": "#4a2e1d",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#5e402e",
+                    "on-tertiary-container": "#ce912b",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "background": "#fff8f1",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#ffb59d",
+                    "secondary-fixed": "#ffdbd0",
+                    "surface-container-low": "#fff2dc",
+                    "surface-container-high": "#f3e7d1",
+                    "error": "#ba1a1a",
+                    "primary": "#32190a",
+                    "tertiary-container": "#4a2f00",
+                    "primary-fixed": "#ffdbc9",
+                    "on-secondary-container": "#75290d",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
+                    "body": ["Helvetica", "Arial", "sans-serif"],
+                    "label": ["'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
+                    "italic-sub": ["'Test Die Grotesk'", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Helvetica', Arial, sans-serif; background-color: #fff8f1; color: #201b0e; }
+        .font-headline { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; }
+        .font-italic-sub { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-style: italic; font-weight: 500; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
+        .asymmetric-bleed { margin-right: -5vw; }
+        @media (max-width: 768px) { .asymmetric-bleed { margin-right: 0; } }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8f1]/80 backdrop-blur-md shadow-sm">
+    <div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+        <div class="text-2xl font-bold text-[#32190a]">
+            <img alt="Dhatu Logo" class="h-10 w-auto object-contain" src="screen.png"/>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-10">
+    <a class="font-light text-lg tracking-tight text-[#4a2e1d]/70 hover:text-[#9b4427] transition-colors duration-300" href="index.html">Home</a>
+    
+    <a class="font-light text-lg tracking-tight text-[#32190a] border-b-2 border-[#9b4427] pb-1 hover:text-[#9b4427] transition-colors duration-300" href="about.html">About</a>
+    
+    <a class="font-light text-lg tracking-tight text-[#4a2e1d]/70 hover:text-[#9b4427] transition-colors duration-300" href="process.html">Process</a>
+    <a class="font-light text-lg tracking-tight text-[#4a2e1d]/70 hover:text-[#9b4427] transition-colors duration-300" href="stories.html">Stories</a>
+    <a class="font-light text-lg tracking-tight text-[#4a2e1d]/70 hover:text-[#9b4427] transition-colors duration-300" href="book.html">Experiences</a>
+</div>
+
+        <button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-md font-label text-sm uppercase tracking-widest scale-95 active:duration-100" onclick="window.location.href='book.html'">
+            Book Now
+        </button>
+    </div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative h-[100vh] overflow-hidden flex items-center bg-[#1a110a]">
+<div class="absolute inset-0 z-0 opacity-60">
+  <img alt="Artisan Studio" class="min-w-full w-full h-full object-cover" src="IMG_0305.jpg" >
+</div>
+<div class="relative z-10 w-full px-8 md:px-16">
+<div class="max-w-4xl">
+<span class="text-surface-bright/70 font-label text-xs tracking-[0.3em] uppercase mb-6 block" >The Artisanal Narrative</span>
+<h1 class="font-headline text-6xl md:text-8xl text-surface-bright leading-[0.9] mb-8" >THE SOUL OF <br><span class="font-italic-sub italic font-light opacity-80" >Mander</span></h1>
+<p class="text-surface-bright/90 font-body text-lg max-w-lg leading-relaxed border-l border-surface-bright/30 pl-6" >
+                        A village rooted in craft, culture, and community in the heart of Jharkhand.
+                        Mandar is home to artisan families who continue to practice the centuries-old tradition of Dhokra metal casting.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Our Legacy & The Makers Intro -->
+<section class="py-32 px-8 md:px-16 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center mb-32">
+<div class="lg:col-span-5 space-y-10">
+<div>
+<span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase block mb-4" >Our Legacy</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary leading-tight mb-8" >BORN FROM THE EARTH, <br><span class="font-italic-sub" >Refined by Generations</span></h2>
+</div>
+<div class="space-y-6 text-on-surface-variant font-body text-base leading-relaxed max-w-md">
+<p class="" >
+                                Mander didn't begin in a boardroom; it began in a small workshop nestled in the valley. For over a century, our family has curated the relationship between human intent and natural raw materials.
+                            </p>
+<p class="" >
+                                We believe that every object carries the memory of its creation. The slight imperfection in a hand-thrown bowl, the deep grain of walnut—these aren't flaws, they are the fingerprints of the craft.
+                            </p>
+</div>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="asymmetric-bleed aspect-[16/9] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
+<img alt="About the place" class="w-full h-full object-cover" data-alt="greenery around mandar" src="IMG_0038.jpg" >
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Artisans Section -->
+<section class="py-32 bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-8 md:px-16">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase block mb-4" >The People</span>
+<h2 class="font-headline text-5xl text-primary" >MEET THE <br><span class="font-italic-sub italic" >Artisans</span></h2>
+</div>
+<p class="text-on-surface-variant max-w-xs text-sm leading-relaxed mb-2" >
+                        Our studio is a collective of specialized minds and hands, each bringing decades of intuition to their specific medium.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Artisan 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container-highest">
+<img alt="Sanjay Malar" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="portrait of Sanjay Malar" src="IMG_3787.jpg" >
+</div>
+<h3 class="font-headline text-lg text-primary uppercase tracking-wider mb-1" >Sanjay Malar</h3>
+<p class="font-italic-sub text-secondary text-sm mb-4 italic" >Artisan</p>
+<p class="text-on-surface-variant text-sm leading-relaxed" >Elias has spent thirty years perfecting the tension of the loom, translating mountain landscapes into woven textiles that last a lifetime.</p>
+</div>
+<!-- Artisan 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container-highest">
+<img alt="Birdi Devi" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="portrait of a Birdi Devi" src="IMG_3849.jpg" >
+</div>
+<h3 class="font-headline text-lg text-primary uppercase tracking-wider mb-1" >Birdi Devi</h3>
+<p class="font-italic-sub text-secondary text-sm mb-4 italic" >Artisan</p>
+<p class="text-on-surface-variant text-sm leading-relaxed" >For Soren, the wheel is a place of meditation. His forms are defined by a brutalist honesty, letting the raw earth speak for itself.</p>
+</div>
+<!-- Artisan 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container-highest">
+<img alt="Pancham Malar" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="portrait of Pancham Malar" src="IMG_3896.jpg" >
+</div>
+<h3 class="font-headline text-lg text-primary uppercase tracking-wider mb-1" >Pancham Malar</h3>
+<p class="font-italic-sub text-secondary text-sm mb-4 italic" >Master Artisan</p>
+<p class="text-on-surface-variant text-sm leading-relaxed" >Clara views joinery as a form of poetry. Her work ensures that Mander furniture remains structurally sound for generations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Life in the Workshop -->
+<section class="py-32 px-8 md:px-16 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-6">
+<div class="aspect-square overflow-hidden">
+<img alt="a chicken on a log" class="w-full h-full object-cover" data-alt="l" src="IMG_3420.jpg" >
+</div>
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Daily Rhythm" class="w-full h-full object-cover" data-alt="dhokra casting image" src="IMG_0028.jpg" >
+</div>
+</div>
+<div class="pt-12">
+<div class="aspect-[3/5] overflow-hidden">
+<img alt="Kid" class="w-full h-full object-cover" data-alt="Kid waalking around the village" src="IMG_3760.jpg" >
+</div>
+</div>
+</div>
+<div class="space-y-10">
+<span class="text-secondary font-label text-[10px] tracking-[0.3em] uppercase block" >Workshop Life</span>
+<h2 class="font-headline text-5xl text-primary leading-tight" >THE HUMAN <br><span class="font-italic-sub italic" >Pulse</span></h2>
+<div class="space-y-8 text-on-surface-variant text-base leading-relaxed">
+<p class="" >
+                                Life at the Mander studio follows the sun, not the clock. We begin with a shared breakfast—a time to discuss the day's projects and the materials we'll be handling. 
+                            </p>
+<p class="" >
+                                There is a communal silence here, broken only by the rhythmic strike of a chisel or the soft whir of a wheel. It is an environment of intense focus and mutual respect, where the newest apprentice sits beside the master of forty years.
+                            </p>
+<blockquote class="border-l-2 border-secondary pl-8 py-2" >
+<p class="font-italic-sub text-2xl text-primary italic leading-tight" >
+                                    "We don't just build objects; we build a culture of presence."
+                                </p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Significance (Refined Bento) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 md:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 items-end">
+<h2 class="font-headline text-5xl text-primary leading-none uppercase tracking-tighter" >WHY THE CRAFT <br>MATTERS NOW</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-sm" >
+                        In a world of mass production, the articulated craft is an act of rebellion—a commitment to quality over quantity.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-primary text-surface-bright p-12 flex flex-col justify-between min-h-[400px]">
+<span class="material-symbols-outlined text-4xl opacity-50" >history_edu</span>
+<div>
+<h3 class="font-headline text-3xl mb-4" >PRESERVING HERITAGE</h3>
+<p class="text-surface-bright/70 text-base leading-relaxed max-w-md" >Every technique we use is a link to the past, ensuring that ancient wisdom thrives in a modern context. We teach so that these skills are never lost to time.</p>
+</div>
+</div>
+<div class="bg-surface p-12 flex flex-col justify-between border border-outline-variant/30">
+<span class="material-symbols-outlined text-4xl text-secondary" >eco</span>
+<div>
+<h3 class="font-headline text-xl text-primary mb-4 uppercase" >ROOTED IN EARTH</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed" >We use 100% natural pigments and sustainably harvested timbers, honoring the land that provides our raw inspiration.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 px-8">
+<div class="max-w-6xl mx-auto bg-[#1a110a] relative overflow-hidden">
+<img alt="Experience Background" class="absolute inset-0 w-full h-full object-cover opacity-30" src="IMG_3499.jpg" >
+<div class="relative z-10 py-32 px-12 text-center">
+<h2 class="font-headline text-5xl md:text-7xl text-surface-bright mb-8 uppercase tracking-tighter" >BECOME PART OF <br>THE NARRATIVE</h2>
+<p class="text-surface-bright/80 max-w-xl mx-auto mb-12 text-lg leading-relaxed" >
+                        Join us in our studio for a masterclass in patience, precision, and the poetry of craft.
+                    </p>
+<div class="flex flex-col md:flex-row justify-center gap-8">
+<a class="bg-secondary text-white px-10 py-4 font-label text-xs tracking-[0.2em] uppercase hover:bg-[#8e3b1e] transition-all" href="book.html" >Book an Experience</a>
+<a class="border border-surface-bright/30 text-surface-bright px-10 py-4 font-label text-xs tracking-[0.2em] uppercase hover:bg-surface-bright hover:text-primary transition-all" href="stories.html" >Explore Workshops</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="md:col-span-1 space-y-8">
+<img alt="Dhatu Logo" class="h-6 w-auto opacity-80" src="screen.png" >
+<p class="text-[#4a2e1d]/50 font-label text-[10px] tracking-widest uppercase leading-loose" >
+                        © 2024 THE ARTICULATED CRAFT. <br>MANDER STUDIO COLLECTIVE.
+                    </p>
+</div>
+<div>
+<h4 class="font-headline text-[10px] tracking-[0.3em] uppercase mb-8 text-[#32190a]" >THE STUDIO</h4>
+<nav class="flex flex-col space-y-4">
+<a class="text-[#4a2e1d]/60 hover:text-[#32190a] font-label text-[10px] tracking-widest uppercase" href="#" >Location</a>
+<a class="text-[#4a2e1d]/60 hover:text-[#32190a] font-label text-[10px] tracking-widest uppercase" href="#" >Map</a>
+</nav>
+</div>
+<div>
+<h4 class="font-headline text-[10px] tracking-[0.3em] uppercase mb-8 text-[#32190a]" >CURATION</h4>
+<nav class="flex flex-col space-y-4">
+<a class="text-[#4a2e1d]/60 hover:text-[#32190a] font-label text-[10px] tracking-widest uppercase" href="#" >Journal</a>
+<a class="text-[#4a2e1d]/60 hover:text-[#32190a] font-label text-[10px] tracking-widest uppercase" href="#" >Newsletter</a>
+</nav>
+</div>
+<div>
+<h4 class="font-headline text-[10px] tracking-[0.3em] uppercase mb-8 text-[#32190a]" >CONNECT</h4>
+<nav class="flex flex-col space-y-4">
+<a class="text-[#4a2e1d]/60 hover:text-[#32190a] font-label text-[10px] tracking-widest uppercase" href="#" >Instagram</a>
+</nav>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
